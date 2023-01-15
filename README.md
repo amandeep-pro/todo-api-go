@@ -20,6 +20,7 @@ A simple API for managing todo items using Go, SQLite, and GORM.
 
 1. **Clone the repository:**
 
-   git clone https://github.com/amandeep-pro/todo-api.git
-   cd todo-api
+- git clone https://github.com/amandeep-pro/todo-api.git
+- cd todo-api
+- go run main.go
    
