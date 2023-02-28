@@ -13,6 +13,10 @@ func main() {
 	migrations.Migrate()
     migrations.Seed()
     r := gin.Default()
+    r.POST("/todos", handlers.CreateTodo)
     r.GET("/todos", handlers.GetTodos)
+    r.GET("/todos/:id", handlers.GetTodoByID)
+    r.PUT("/todos/:id", handlers.UpdateTodo)
+    r.DELETE("/todos/:id", handlers.DeleteTodo)
     r.Run(":4500")
 }
